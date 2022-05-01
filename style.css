@@ -200,6 +200,7 @@ li {
   }
 
   .content {
+    width:100%
     box-shadow: none;
     margin: 0;
     border-radius: 0;
