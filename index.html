@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Generate random passwords</h1>
+      <div class="content">
+        <h2>Enter Password Length</h2>
+        <p class="error_msg"></p>
+        <form action="#" class="form">
+          <ul>
+            <li>
+              <label for="amount_of_letters">
+                <input
+                  type="text"
+                  id="amount_of_letters"
+                  placeholder="How many letters"
+                />
+              </label>
+            </li>
+            <li>
+              <label for="amount_of_numbers">
+                <input
+                  type="text"
+                  id="amount_of_numbers"
+                  placeholder="How many numbers"
+                />
+              </label>
+            </li>
+            <li>
+              <label for="amount_of_symbols">
+                <input
+                  type="text"
+                  id="amount_of_symbols"
+                  placeholder="How many symbols"
+                />
+              </label>
+            </li>
+            <li>
+              <button type="submit" class="submit_btn btn">Generate</button>
+            </li>
+          </ul>
+        </form>
+        <div class="processing_msg_div">
+          <div class="processing_cont">
+            <p class="processing_msg">Processing Result. Please wait!! 🤫</p>
+            <div>
+              <img
+                src="spinner/icons8-iphone-spinner-50.png"
+                alt="spinner"
+                class="spinner"
+              />
+            </div>
+          </div>
+          <div class="result_cont">
+            <h2>Your Generated Password 😎</h2>
+            <p class="copy_alert">Copied👍👏</p>
+            <p class="result_msg"></p>
+            <button class="copy_btn">copy</button>
+            <button class="new_password_btn btn">Generate new password</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Build with love at Duport Road by Big Logic 😍</p>
+    </footer>
+  </body>
+</html>
